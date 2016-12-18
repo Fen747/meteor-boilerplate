@@ -51,7 +51,7 @@ export const split = ( text, pattern ) => text.split( pattern );
 /**
  * Date methods
  */
-export const timestamp = date => date.getTime();
+export const timestamp = ( date ) => ( ( date && date.getTime() ) || now() );
 export const now = f => Date.now();
 export const today = f => {
 	const date = new Date();
