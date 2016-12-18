@@ -4,7 +4,7 @@
 	GitHub repository : <a href="https://github.com/AlainRo/meteor-multd3/issues/1">https://github.com/Fen747/meteor-boilerplate</a>
 </p>
 <p>
-	by <b>David Panart</b> aka. <b>Fen747</b>
+	by <b><a href="https://twitter.com/DavidPanart">David Panart</a></b> aka. <b>Fen747</b>
 </p>
 <p>
 	Feel free to fork this repository.
