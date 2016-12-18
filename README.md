@@ -1,5 +1,5 @@
 <h1>Meteor Boilerplate</h1>
-<h4>A Meteor ready-to-use app for Blaze + FlowRouter with a bunch of useful functions</h4>
+<h4>A Meteor ready-to-use app for Blaze + FlowRouter with a bunch of useful functions, writen in ES6</h4>
 <p>
 	GitHub repository : <a href="https://github.com/AlainRo/meteor-multd3/issues/1">https://github.com/Fen747/meteor-boilerplate</a>
 </p>
@@ -20,13 +20,13 @@
 <h3>API ( /imports/api )</h3>
 <h4>Routes  ( /imports/api/routes )</h4>
 <ul>
-	<li>config.js - Set you routes hierachy and triggers here. Use updateView to instead of BlazeLayout.Render to handle your transition animations</li>
+	<li>config.js - Set your routes hierachy and triggers here. Use updateView instead of BlazeLayout.Render to handle your transition animations</li>
 	<li>triggers.js - Define the triggers here</li>
-	<li>routes.js - Define each route here</li>
+	<li>routes.js - Define your routes here</li>
 </ul>
 <h4>Collections ( /imports/api/collections )</h4>
 <ul>
-	<li>Store your collections global collections at /imports/api/collections</li>
+	<li>Store your global collections at /imports/api/collections</li>
 	<li>Store your client only minimongo instances in ./client</li>
 	<li>Store your private collections in ./server</li>
 </ul>
@@ -43,7 +43,7 @@
 <h4>App utilities ( /imports/library/appUtilities.js )</h4>
 <ul>
 	<li><b>getEmailfromUid</b>( userId ) - use this to get the first mail from a user</li>
-	<li><b>secure</b> - use this to automatically deny all writing permissions for the user in production</li>
+	<li><b>secure</b>( collection ) - use this to automatically deny all writing permissions for the user in production</li>
 	<li><b>endLoadingScreen</b> - great to remove loading screen you could have injected via Arunoda's initial inject package</li>
 	<li><b>playAnimation</b>( animationName, elementId, animationTime = 1000 ) - play an animation on an element adding by adding it a class and removing it automatically after 'animationTime' ms</li>
 </ul>
@@ -62,7 +62,7 @@
 </ul>
 <h4>Context utilities ( /imports/library/contextUtilities.js )</h4>
 <ul>
-	<li>A bunch of functions return a meteor flag and taking an optionnal calllback to execute if the flag is set to true</li>
+	<li>A bunch of functions returning a meteor flag and taking an optionnal callback to execute if the flag is set to true</li>
 	<li>isClient, isServer, isCordova, isDevelopment, isProduction</li>
 </ul>
 <h4>Functional Programming ( /imports/library/funcProg.js )</h4>
@@ -77,9 +77,9 @@
 	<li><b>urlify</b>( str ) - make a string valid as a url. Great for passing post titles in the url for example</li>
 	<li><b>tryReach</b>( object, 'nestedAttribute1', 'nestedAttribute2', ... ) - a very useful function to naviguate in nested objects without throwing errors if an attribute is called on a non-object value</li>
 	<li><b>buildRegExp</b>( str ) - a simple regexp builder</li>
-	<li><b>benchmark</b> - a basic functions to check performances of a callback</li>
-	<li><b>unblock</b> - an alias to ddp's this.unblock that do not throw an error when the method doesn't exists</li>
-	<li><b>isValidImageUrl</b>( url ) - check if a url point to an image</li>
+	<li><b>benchmark</b>( callback ) - a basic functions to check performances of a callback</li>
+	<li><b>unblock</b>( ddp connection ) - an alias to ddp's this.unblock that do not throw an error when the method doesn't exists</li>
+	<li><b>isValidImageUrl</b>( url ) - check if a url points to an image</li>
 </ul>
 <h3>Startup ( /imports/startup )</h3>
 <h4>Client ( /imports/startup/client.js )</h4>
