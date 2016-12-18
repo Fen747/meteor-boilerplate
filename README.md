@@ -11,6 +11,20 @@
 	<br>
 	Don't forget to star it too if you find it cool!
 </p>
+<p>
+	Projects using this boilerplate :
+	<ul>
+		<li>https://talkalang.com</li>
+	</ul>
+</p>
+<hr>
+<h2>Installation</h2>
+	<ul>
+		<li>Clone this repo : `git clone https://github.com/Fen747/meteor-boilerplate`</li>
+		<li>Change Directory : `cd meteor-boilerplate`</li>
+		<li>Install NPM dependencies : `meteor npm install`</li>
+		<li>Enjoy !</li>
+	</ul>
 <hr>
 <h2>Doc</h2>
 <h3>Packages ( /.meteor/packages )</h3>
@@ -45,7 +59,7 @@
 	<li><b>getEmailfromUid</b>( userId ) - use this to get the first mail from a user</li>
 	<li><b>secure</b>( collection ) - use this to automatically deny all writing permissions for the user in production</li>
 	<li><b>endLoadingScreen</b> - great to remove loading screen you could have injected via Arunoda's initial inject package</li>
-	<li><b>playAnimation</b>( animationName, elementId, animationTime = 1000 ) - play an animation on an element adding by adding it a class and removing it automatically after 'animationTime' ms</li>
+	<li><b>playAnimation</b>( animationName, elementId, animationTime = 1000 ) - play an animation on an element by adding it a class and removing it automatically after 'animationTime' ms</li>
 </ul>
 <h4>Blaze helpers ( /imports/library/blazeHelpers.js )</h4>
 <ul>
