@@ -19,12 +19,12 @@
 </p>
 <hr>
 <h2>Installation</h2>
-	<ul>
-		<li>Clone this repo : `git clone https://github.com/Fen747/meteor-boilerplate`</li>
-		<li>Change Directory : `cd meteor-boilerplate`</li>
-		<li>Install NPM dependencies : `meteor npm install`</li>
-		<li>Enjoy !</li>
-	</ul>
+<ul>
+<li>Clone this repo : <b>git clone https://github.com/Fen747/meteor-boilerplate</b></li>
+<li>Change Directory : <b>cd meteor-boilerplate<b/></li>
+<li>Install NPM dependencies : <b>meteor npm install<b/></li>
+<li>Enjoy !</li>
+</ul>
 <hr>
 <h2>Doc</h2>
 <h3>Packages ( /.meteor/packages )</h3>
