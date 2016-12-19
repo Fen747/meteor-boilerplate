@@ -31,13 +31,13 @@
 <ul>
 	<li>A bunch of very useful packages are either pre-installed or just need to be uncommented to be installed in your app</li>
 </ul>
-<h2>Changes to globals ( /both/_globals.js )</h2>
-<h3>Lodash</h3>
+<h3>Changes to globals ( /both/_globals.js )</h3>
+<h2>Lodash</h2>
 <ul>
 	<li>This app already has erasaur:lodash package installed and aliased to '_' instead of underscore</li>
 	<li>Lodash is known to have the same API as UndescoreJs, but with better performances, and more features</li>
 </ul>
-<h3>Meteor.user</h3>
+<h2>Meteor.user()</h2>
 <ul>
 <li>I <b>optimized the Meteor.user()</b> function</li>
 <li>It can now be used with a <b>string as parameter to alias a findOne</b> on a specific user</li>
