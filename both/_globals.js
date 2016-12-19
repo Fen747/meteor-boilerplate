@@ -5,6 +5,20 @@ _ = lodash;
 // - get another user document by _id
 // - automaticaly filter the doc fields to reduce the number of re-render triggers to the strict minimum
 // as Meteor.user send all the document by default, which is quite bad for performance and debugging
+// 
+// HOW TO
+// - get current user complete doc :
+// const user = Meteor.user();
+// 
+// - get a specific user complete doc
+// const user = Meteor.user( "aUserIdString" );
+// 
+// - get a specific user name and its emails
+// const user = Meteor.user( "aUserIdString", ['username', 'emails'] );
+// 
+// - get current user name and its emails
+// const user = Meteor.user( ['username', 'emails'] );
+// 
 Meteor._user = Meteor.user;
 Meteor.user = ( arg1, arg2 ) => {
 	let uid;
