@@ -107,7 +107,7 @@
 </ul>
 <h4>DOM Manipulation</h4>
 <ul>
-<li><b>createDOMElement</b>( tag, classList, id, dataset, innerHTML) - Use this passing as parameter an object containing the attributes you want to assign to the created element (please, read the function signature for details)</li>
+<li><b>createDOMElement</b>({ tag, classList, id, dataset, innerHTML }) - Use this passing as parameter an object containing the attributes you want to assign to the created element (please, read the function signature for details)</li>
 </ul>
 <h4>Functional Programming ( /imports/library/funcProg.js )</h4>
 <ul>
