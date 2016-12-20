@@ -2,5 +2,5 @@
 <ul>
 <li>Added the <b>DOMManipulation.js</b> file</li>
 <li>Added the <b>parse</b>, <b>stringify</b> and <b>forIn</b> functions to funcProg.js</li>
-<li>Added the pre-installed<b>ejson</b> package</li>
+<li>Added the pre-installed <b>ejson</b> package</li>
 </ul>
