@@ -7,6 +7,9 @@
 	by <b><a href="https://twitter.com/DavidPanart">David Panart</a></b> aka. <b>Fen747</b>
 </p>
 <p>
+	Current version : <h5>1.0.1</h5>
+</p>
+<p>
 	Feel free to fork this repository.
 	<br>
 	Don't forget to star it too if you find it cool!
