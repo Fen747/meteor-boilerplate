@@ -1,4 +1,5 @@
 import { mobileViewSize, urlify, tryReach } from "/imports/library/utilities.js";
+import appContext from "/imports/library/appContext/client";
 
 document.removeElement = id => {
   const elem = document.getElementById( id );

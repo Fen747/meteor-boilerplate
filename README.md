@@ -101,6 +101,10 @@
 	<li>A bunch of functions returning a meteor flag and taking an optionnal callback to execute if the flag is set to true</li>
 	<li>isClient, isServer, isCordova, isDevelopment, isProduction</li>
 </ul>
+<h4>DOM Manipulation</h4>
+<ul>
+<li><b>createDOMElement</b>( tag, classList, id, dataset, innerHTML) - Use this passing as parameter an object containing the attributes you want to assign to the created element (please, read the function signature for details)</li>
+</ul>
 <h4>Functional Programming ( /imports/library/funcProg.js )</h4>
 <ul>
 	<li>A bunch of ES6 functions and aliases for functional programming</li>

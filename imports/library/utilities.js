@@ -66,6 +66,7 @@ export const arrayfy = arg => {
   } else if ( Object.prototype.toString.call( arg ) == '[object Array]' ) {
     return arg;
   }
+  return ( [] );
 };
 
 export const benchmark = ( cbk, iterations, desc ) => {

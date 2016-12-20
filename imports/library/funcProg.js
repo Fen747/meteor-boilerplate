@@ -31,6 +31,17 @@ export const deepMerge = ( firstArray, secondArray, firstAttr, secondAttr ) => {
 };
 
 /**
+ * Object methods
+ */
+export const forIn = ( object, iteratee ) => {
+	for ( key in object ) {
+		iteratee( key, object[ key ] );
+	}
+
+	return ( object );
+};
+
+/**
  * Collection methods
  */
 export const update = ( coll, selector = {}, modifier, multi = false ) => coll.update( selector, modifier, { multi } );
@@ -47,6 +58,8 @@ export const aggregate = ( coll, pipes ) => coll.aggregate( pipes );
  */
 export const getNbWord = str => filter( split( str, /[\s\n]/ ), word => word && word != " " ).length;
 export const split = ( text, pattern ) => text.split( pattern );
+export const stringify = ejsonArg => EJSON.stringify( ejsonArg );
+export const parse = string => EJSON.parse( string );
 
 /**
  * Date methods
