@@ -7,7 +7,8 @@
 	by <b><a href="https://twitter.com/DavidPanart">David Panart</a></b> aka. <b>Fen747</b>
 </p>
 <p>
-	Current version : <h5>1.0.1</h5>
+<h3>version 1.0.1</h3>
+<a href="https://github.com/Fen747/meteor-boilerplate/blob/master/HISTORY.md">See version changes</a>
 </p>
 <p>
 	Feel free to fork this repository.
