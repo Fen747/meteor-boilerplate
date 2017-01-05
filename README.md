@@ -7,7 +7,7 @@
 	by <b><a href="https://twitter.com/DavidPanart">David Panart</a></b> aka. <b>Fen747</b>
 </p>
 <p>
-<h3>version 1.0.1</h3>
+<h3>version 1.1</h3>
 <a href="https://github.com/Fen747/meteor-boilerplate/blob/master/HISTORY.md">See version changes</a>
 </p>
 <p>
@@ -28,6 +28,9 @@
 <li>Change Directory : <b>cd meteor-boilerplate</b></li>
 <li>Install NPM dependencies : <b>meteor npm install</b></li>
 <li>Enjoy !</li>
+</ul>
+<ul>
+<li>See <a href="https://github.com/Fen747/meteor-boilerplate/blob/master/HISTORY.md">HISTORY.MD</a> for more informations</li>
 </ul>
 <hr>
 <h2>Doc</h2>
@@ -124,6 +127,17 @@
 	<li><b>benchmark</b>( callback ) - a basic functions to check performances of a callback</li>
 	<li><b>unblock</b>( ddp connection ) - an alias to ddp's this.unblock that do not throw an error when the method doesn't exists</li>
 	<li><b>isValidImageUrl</b>( url ) - check if a url points to an image</li>
+</ul>
+<h3>Modules ( /imports/modules )</h3>
+<h4>Smart disconnect ( /imports/modules/smartDisconnect.js )</h4>
+<ul>
+	<li>Maintaining sessions alive in meteor is quite costly. Use <b>SmartDisconnect.start()</b> to set <b>Meteor.status().status</b> to `offline` when a user is inactive for a certain time (default to 300s)</li>
+	<li>
+		<b>SmartDisconnect.start()</b> takes two optional parameters :
+		<li>First, an object like this : { timeBeforeDisconnect = 300, activateOnCordova = true }</li>
+		<li>Second, a callback called just before a deconnection occurs</li>
+	</li>
+	<li>Credits to <a href="https://github.com/mixmaxhq/meteor-smart-disconnect">mixmaxhq</a></li>
 </ul>
 <h3>Startup ( /imports/startup )</h3>
 <h4>Client ( /imports/startup/client.js )</h4>
