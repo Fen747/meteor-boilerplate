@@ -3,7 +3,7 @@
  * Inspired from https://github.com/mixmaxhq/meteor-smart-disconnect
  */
 
-let _disconnectTime = 5 * 60 * 1000;
+let _disconnectTime = 5 * 60;
 let _disconnectTimer = null;
 
 const _disconnectIfHidden = cbk => {
@@ -11,15 +11,17 @@ const _disconnectIfHidden = cbk => {
 
   if ( document.hidden ) {
   	_createDisconnectTimeout( cbk );
-  } else Meteor.reconnect();
+  } else {
+  	Meteor.reconnect();
+  }
 };
 
 const _createDisconnectTimeout = cbk => {
   _removeDisconnectTimeout();
   _disconnectTimer = setTimeout( f => {
-  	cbk();
+  	cbk && cbk();
   	Meteor.disconnect();
-  }, _disconnectTime );
+  }, ( _disconnectTime * 1000 ) );
 }
 
 const _removeDisconnectTimeout = f => {
@@ -28,7 +30,7 @@ const _removeDisconnectTimeout = f => {
 
 // The callback 'cbk' is called just before the disconnection occurs
 export const SmartDisconnect = {
-	start({ timeBeforeDisconnect = 300, activateOnCordova = true } = {}, cbk ){
+	start({ timeBeforeDisconnect = 10, activateOnCordova = true } = {}, cbk ){
 		const disconnectFunctionWithCbk = f => ( _disconnectIfHidden( cbk ) );
 
 		_disconnectTime = timeBeforeDisconnect;
