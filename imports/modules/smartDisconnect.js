@@ -28,7 +28,7 @@ const _removeDisconnectTimeout = f => {
 
 // The callback 'cbk' is called just before the disconnection occurs
 export const SmartDisconnect = {
-	start({ timeBeforeDisconnect = 300, activateOnCordova = true }, cbk ){
+	start({ timeBeforeDisconnect = 300, activateOnCordova = true } = {}, cbk ){
 		const disconnectFunctionWithCbk = f => ( _disconnectIfHidden( cbk ) );
 
 		_disconnectTime = timeBeforeDisconnect;
