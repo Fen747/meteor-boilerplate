@@ -31,6 +31,7 @@
 </ul>
 <ul>
 <li>See <a href="https://github.com/Fen747/meteor-boilerplate/blob/master/HISTORY.md">HISTORY.MD</a> for more informations</li>
+<li><a href="https://forums.meteor.com/t/a-meteor-ready-to-use-boilerplate-app-for-blaze-flowrouter-in-es6/32386">Meteor forums topic</a></li>
 </ul>
 <hr>
 <h2>Doc</h2>

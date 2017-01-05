@@ -10,11 +10,12 @@
 </li>
 <li>
 <ul>
-	<li>Use <b>comp</b> and <b>pipe</b> to chain function calls (based on the <b>reduce()</b> and function curring)</li>
-	<li>Use <b>comp</b> to chains functions calls and save the chain for later use</li>
+	<li>Use <b>comp</b> and <b>pipe</b> to chain function calls (based on <b>reduce()</b> and function curring)</li>
+	<li>Use <b>comp</b> to chain functions calls and save the chain for later use</li>
 	<li>Example : `let compute = comp( multiplyBy3, add9 ); log( composed( 2 ) ); => 33`</li>
-	<li>Use <b>pipe</b> to chains functions calls for an immediate execution</li>
+	<li>Use <b>pipe</b> to chain functions calls for an immediate execution</li>
 	<li>Example : `pipe( [multiplyBy3, add9], 2 ); // => 33`</li>
+	<li>Credits to <a href="https://github.com/FlorianBELLAZOUZ">FlorianBELLAZOUZ</a></li>
 </ul>
 </li>
 <li>
