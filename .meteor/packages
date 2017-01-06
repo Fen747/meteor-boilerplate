@@ -52,6 +52,8 @@ settinghead:auto-nprogress
 themeteorchef:bert
 materialize:materialize@=0.97.6
 
+socialize:messaging
+
 # mizzao:user-status
 # mizzao:timesync
 # gadicohen:sitemaps

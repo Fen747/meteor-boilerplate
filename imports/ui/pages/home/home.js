@@ -14,8 +14,8 @@ Template.home.helpers({
 });
 
 Template.home.events({
-	'click .class': function ( event, instance ) {
-  
+	'click #js-create-conv': function ( event, instance ) {
+  	Meteor.call("createConversation", ( error, response ) => {} );
 	}
 });
 

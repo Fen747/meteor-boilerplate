@@ -1,5 +1,7 @@
-import { Meteor } from 'meteor/meteor';
+// Methods
+import "/imports/api/methods";
+import "/imports/api/methods/server";
 
-Meteor.startup(() => {
-  // code to run on server at startup
-});
+// Collections
+import "/imports/api/collections";
+import "/imports/api/collections/server";
