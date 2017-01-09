@@ -13,12 +13,6 @@ Template.home.helpers({
 	}
 });
 
-Template.home.events({
-	'click #js-create-conv': function ( event, instance ) {
-  	Meteor.call("createConversation", ( error, response ) => {} );
-	}
-});
-
 Template.home.onDestroyed( function() {
 	
 });
