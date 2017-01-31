@@ -49,3 +49,14 @@ export const playAnimation = ( animationName, elementId, animationTime = 1000 ) 
     el.classList.remove( animationName );
   }, animationTime );
 };
+
+export const pathFor = ( path, view ) => {
+  if ( path.hash ) {
+    view = path;
+    path = view.hash.route;
+    delete view.hash.route;
+  }
+
+  const query = view.hash.query ? FlowRouter._qs.parse( view.hash.query ) : {};
+  return ( FlowRouter.path( path, view.hash, query ) );
+};

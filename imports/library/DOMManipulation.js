@@ -5,10 +5,6 @@ export const createDOMElement = ({ tag = 'div', classList = [], id = "", dataset
 	const element = document.createElement("tag");
 
 	map( arrayfy( classList ), className => element.classList.add("data-el") );
-
-	//forIn( data, ( key, value ) => element.dataset[ key ] = value );
-
 	Object.assign( element, { id, innerHTML, dataset });
-
 	return ( element );
 };

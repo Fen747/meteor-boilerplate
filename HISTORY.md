@@ -1,4 +1,9 @@
-<h2>v1.1 | 05/01/2016</h2>
+<h2>v1.1.1 | 31/01/2017</h2>
+<ul>
+	<li>Moved the window size reactive dict to its own file under /imports/modules</li>
+	<li>Added the global variable <b>DDPLogging</b> to toggle on and off the listening of ddp messages on client</li>
+</ul>
+<h2>v1.1.0 | 05/01/2016</h2>
 <ul>
 <li>Added some functions to <b>funcProg.js</b> file</li>
 <li>

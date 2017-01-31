@@ -1,8 +1,12 @@
 // Routes
 import "/imports/api/routes";
 
-// Blaze helpers
+// Library
 import "/imports/library/blazeHelpers";
+
+// Modules
+import "/imports/modules/reactive-window";
+import "/imports/modules/ddpLogging";
 
 // Pages, layouts and components
 import "/imports/ui/layouts/mainLayout";

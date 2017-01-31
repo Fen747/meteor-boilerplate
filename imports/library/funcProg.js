@@ -91,9 +91,10 @@ export const getDBDate = ( date = new Date() ) => ( new Date( getDBTs( date ) ) 
 /**
  * Number methods
  */
-export const floor = n => Math.floor( n );
+export const random = Math.random;
+export const floor = Math.floor;
 export const isOdd = n => !!( n % 2 );
-export const getPct = ( numerator, denominator ) => numerator / denominator;
+export const getPct = ( numerator, denominator ) => ( numerator / denominator ) * 100;
 export const fixedDec = ( number, nDec = 1 ) => Number( number.toFixed( nDec ) );
 
 /**

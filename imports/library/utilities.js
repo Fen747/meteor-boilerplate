@@ -1,12 +1,3 @@
-window.size = new ReactiveDict("window.size");
-window.addEventListener( "resize", f => {
-  window.size.set( "width", window.innerWidth );
-  window.size.set( "height", window.innerHeight );
-  window.size.set( "ratio", ( window.innerWidth / window.innerHeight ) );
-});
-window.size.set( "width", window.innerWidth );
-window.size.set( "height", window.innerHeight );
-
 export const mobileViewSize = f => ( window.size.get("width") < 601 );
 
 export const urlify = str => {

@@ -1,34 +1,6 @@
-export const isClient = ( cbk ) => {
-  if ( Meteor.isClient && cbk ) {
-   return ( cbk() );
-  }
-  return ( Meteor.isClient );
-};
-
-export const isServer = ( cbk ) => {
-  if ( Meteor.isServer && cbk ) {
-   return ( cbk() );
-  }
-  return ( Meteor.isServer );
-};
-
-export const isCordova = ( cbk ) => {
-  if ( Meteor.isCordova && cbk ) {
-    return ( cbk() );
-  }
-  return ( Meteor.isCordova );
-};
-
-export const isDevelopment = ( cbk ) => {
-  if ( Meteor.isDevelopment && cbk ) {
-    return ( cbk() );
-  }
-  return ( Meteor.isDevelopment );
-};
-
-export const isProduction = ( cbk ) => {
-  if ( !Meteor.isDevelopment && cbk ) {
-    return ( cbk() );
-  }
-  return ( !Meteor.isDevelopment );
-};
+export const onClient = cbk => ( Meteor.isClient && cbk ? cbk() : Meteor.isClient );
+export const onServer = cbk => ( Meteor.isServer && cbk ? cbk() : Meteor.isServer );
+export const onCordova = cbk => ( Meteor.isCordova && cbk ? cbk() : Meteor.isCordova );
+export const onDevelopment = cbk => ( Meteor.isDevelopment && cbk ? cbk() : Meteor.isDevelopment );
+export const onProduction = cbk => ( Meteor.isProduction && cbk ? cbk() : Meteor.isProduction );
+export const isAdmin = ( uid, cbk ) => ( cbk && Roles && Roles.userIsInRole( uid, ['admin'] ) ? cbk() : Roles.userIsInRole( uid, ['admin'] ) );

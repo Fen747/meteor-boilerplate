@@ -120,7 +120,6 @@
 </ul>
 <h4>Utilities ( /imports/library/utilities.js )</h4>
 <ul>
-	<li><b>window.size</b> - a Reactive dict to make resizing the window reactive</li>
 	<li><b>mobileViewSize</b> - check if the window width is lesser than 601 (based on materializecss standard media queries)</li>
 	<li><b>urlify</b>( str ) - make a string valid as a url. Great for passing post titles in the url for example</li>
 	<li><b>tryReach</b>( object, 'nestedAttribute1', 'nestedAttribute2', ... ) - a very useful function to naviguate in nested objects without throwing errors if an attribute is called on a non-object value</li>
@@ -130,6 +129,16 @@
 	<li><b>isValidImageUrl</b>( url ) - check if a url points to an image</li>
 </ul>
 <h3>Modules ( /imports/modules )</h3>
+<h4>Reactive Window</h4>
+<ul>
+	<li><b>window.size</b> - a Reactive dict to make resizing the window reactive</li>
+	<li>Imported to client by default</li>
+</ul>
+<h4>DDP Logging</h4>
+<ul>
+	<li>Use the <b>DDPLogging</b> global object to toggle on and off the listening of DDP messages on the client</li>
+	<li>Imported to client by default</li>
+</ul>
 <h4>Smart disconnect ( /imports/modules/smartDisconnect.js )</h4>
 <ul>
 	<li>Maintaining sessions alive in meteor is quite costly. Use <b>SmartDisconnect.start()</b> to set <b>Meteor.status().status</b> to `offline` when a user is inactive for a certain time (default to 300s)</li>
