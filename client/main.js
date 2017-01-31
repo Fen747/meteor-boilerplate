@@ -17,3 +17,10 @@ import "/imports/startup/client";
 
 // Stylesheets
 import "/imports/ui/stylesheets/main.css";
+
+// Methods
+import "/imports/api/methods";
+
+// Collections
+import "/imports/api/collections";
+import "/imports/api/collections/client";

@@ -13,12 +13,6 @@ Template.home.helpers({
 	}
 });
 
-Template.home.events({
-	'click .class': function ( event, instance ) {
-  
-	}
-});
-
 Template.home.onDestroyed( function() {
 	
 });
