@@ -1,3 +1,9 @@
+<h2>v1.1.3 | 01/03/2017</h2>
+<ul>
+	<li>Meteor updated to  1.4.3</li>
+	<li>Added a 404 Not Found route in <b>/imports/api/routes/config.js</b></li>
+	<li>Fixed a naming error in <b>DDPLogging</b></li>
+</ul>
 <h2>v1.1.1 | 31/01/2017</h2>
 <ul>
 	<li>Moved the window size reactive dict to its own file under /imports/modules</li>

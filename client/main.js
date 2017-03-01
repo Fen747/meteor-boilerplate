@@ -1,3 +1,6 @@
+// Startup
+import "/imports/startup/client";
+
 // Routes
 import "/imports/api/routes";
 
@@ -11,9 +14,7 @@ import "/imports/modules/ddpLogging";
 // Pages, layouts and components
 import "/imports/ui/layouts/mainLayout";
 import "/imports/ui/pages/home";
-
-// Startup
-import "/imports/startup/client";
+import "/imports/ui/pages/notFound";
 
 // Stylesheets
 import "/imports/ui/stylesheets/main.css";

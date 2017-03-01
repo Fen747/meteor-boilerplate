@@ -3,7 +3,7 @@ if ( Meteor.isClient ) {
 	let _ddpLogState = false;
 
 	Meteor.connection._stream.send = function(){
-	  oldSend.apply( this, arguments );
+	  _oldDdpSendFunc.apply( this, arguments );
 		if ( _ddpLogState ) console.log( arguments[0] );
 	};
 

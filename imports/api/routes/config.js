@@ -5,6 +5,12 @@ if ( Meteor.isClient ) Meteor.startup( () => { BlazeLayout.setRoot('body'); });
 const animationTime = 0; // in ms
 let lastUsedLayout = "";
 
+FlowRouter.notFound = {
+  action(){
+    BlazeLayout.render( 'mainLayout', { main: 'notFound' } );
+  }
+};
+
 export const Routes = FlowRouter.group({
   name: "allRoutes",
   triggersEnter: [

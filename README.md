@@ -7,7 +7,7 @@
 	by <b><a href="https://twitter.com/DavidPanart">David Panart</a></b> aka. <b>Fen747</b>
 </p>
 <p>
-<h3>version 1.1.1</h3>
+<h3>version 1.1.3</h3>
 <a href="https://github.com/Fen747/meteor-boilerplate/blob/master/HISTORY.md">See version changes</a>
 </p>
 <p>
@@ -18,7 +18,7 @@
 <p>
 	Public projects using this boilerplate :
 	<ul>
-		<li>https://talkalang.com</li>
+		<li><a href="https://talkalang.com">https://talkalang.com</a></li>
 	</ul>
 </p>
 <hr>
